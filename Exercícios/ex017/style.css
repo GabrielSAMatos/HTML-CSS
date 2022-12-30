@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/*
+    SELETORES PERSONALIZADOS
+    em HTML é id = em CSS é # (1 elemento)
+    em HTML é class = em CSS é . (vários elementos)
+    em HTML é pseudoclass = em CSS é :
+    em HTML é pseudoelemento = em CSS é ::
+    em HTML é children = em CSS é >
+*/
+body {
+    background-color: #2A2B2E;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #87FF65;
+}
+
+h1 {
+    color: #A4C2A8;
+}
+
+h1#principal {
+    text-align: center;
+    color: #5A5A66;
+    background-color: white;
+}
+
+h2 {
+    color: #ACEB98;
+}
+
+.basico {
+    color: red;
+    font-weight: bold;
+}
+
+.intermediario {
+    color: yellow;
+}
+
+.avançado {
+    color: blue;
+}
+
+.destaque{
+    color: white;
+    font-weight: bolder;
+    background-color: aqua;
+}
