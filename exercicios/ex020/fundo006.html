@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo te tela</title>
 </head>
 
 <body>
@@ -21,23 +21,34 @@
 
 <style>
     body{
+        /*
         height: 98vh;
         background-color: rgb(35, 107, 214);
         background-image: url('imagens-cap19/wallpaper002.jpg');
         background-position: top center;
         background-repeat: no-repeat;
         background-size: cover;
-        /*
+        background-attachment: fixed;
+        
         auto: Navegador se vira pra exibir
         contain: 100% da imagem e adapta sem cortar 
         cover: Tela inteira porém faz cortes na imagem
         Ou colocando a porcentagem da tela.
         */
+
+        /* Shorthand - background
+            color > image > position > repeat > [size] > attachment
+        */
+        background: black url('imagens-cap19/wallpaper002.jpg') top center no-repeat fixed;
+        background-size: cover;
+        /*
+        background-size necessita ser escrito fora do shorthand por enquanto.
+        */
     }
     
     main{
         background-color: white;
-        width: 400px;
+        max-width: 400px;
         padding: 10px;
         margin: auto;
         border: 1px solid black;
