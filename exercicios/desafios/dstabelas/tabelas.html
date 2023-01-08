@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabela</title>
+    <title>Tabelas</title>
 </head>
 
 <body>
@@ -63,6 +63,58 @@
             <td colspan="4">N</td>
         </tr>
     </table>
+    <p>========================</p>
+    <table id="filmes">
+        <caption>Filmes Favoritos</caption>
+        <THead>
+            <tr class="filme">
+                <th scope="col">Grupo</th>
+                <th scope="col">Nomes</th>
+                <th scope="colgo" colspan="3">Filmes</th>
+            </tr>
+        </THead>
+        <Tbody>
+            <tr class="filme">
+                <th scope="rowgroup" rowspan="3">Mulheres</th>
+                <td>Ana Maria Santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr class="filme">
+                <td>Beatriz Souza</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+            <tr class="filme">
+                <td>Cláudia Melo</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>BigHero</td>
+            </tr>
+            <tr class="filme">
+                <th scope="rowgroup" rowspan="3">Homens</th rowspan="3">
+                <td>Bruno Mendonça</td>
+                <td>Intocáveis</td>
+                <td>Amnésia</td>
+                <td>Gladiaor</td>
+            </tr>
+            <tr class="filme">
+                <td>Daniel Lourenço</td>
+                <td>Wall-e</td>
+                <td>Oldboy</td>
+                <td>Dangal</td>
+
+            </tr>
+            <tr class="filme">
+                <td>Fabiano Mota</td>
+                <td>Star Wars 5</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
+            </tr>
+        </Tbody>
+    </table>
 </body>
 
 </html>
@@ -76,9 +128,40 @@
         width: 300px;
     }
     
+    tbody > tr:nth-child(odd){
+        background-color: aqua;
+    }
+
+    tbody > tr:nth-child(even) {
+        background-color: palevioletred;
+    }
+
     td{
         border: 1px solid black;
         text-align: center;
         padding: 10px;
+    }
+    
+    caption{
+        background-color: gray;
+        border: 1px solid black;
+        font-weight: bold;
+    }
+
+    table#filmes{
+        border-collapse: collapse;
+        width: 600px;
+    }
+
+    tr.filme > th, td{
+        border: 1px solid black;
+    }
+
+    tr.filme > th{
+        background-color: lightslategray;
+    }
+
+    tr.filme > td{
+        background-color: beige;
     }
 </style>
