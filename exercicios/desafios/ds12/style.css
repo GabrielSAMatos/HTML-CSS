@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+body{
+    background-image: url(pacote-d013/imagens/fundo-madeira.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 98.3vh;
+    background-position: center center;
+}
+
+#iphone{    
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 900px;
+}
+
+#tela{
+    background-color: aliceblue;
+    width: 500px;
+    height: 500px;
+}
