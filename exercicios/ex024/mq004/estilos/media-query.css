@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+/* Todas as demais mídias */
+
+/* Typical Device Breakpoints 
+----------------------------
+Pequenas telas: até 480px
+Celular: 481px até 768px
+Tablet: 769px até 1024px
+Desktop: 1025px até 1200px
+Grandes telas: acima de 1201px
+*/
+
+
+@media print{ /* IMPRESSÃO */
+    *{
+    
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body{
+        background: url(../Imagens/back-print.jpg) /* desnecessário */;
+    }
+
+    main{
+        border: 2px solid black;
+    }
+
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+
+    main::after{
+        content: 'Essa impressão foi feita pelo site do Gabriel SA Matos';
+        text-decoration: overline;
+    }
+
+    img#phone{ display: none;}
+    img#tablet{ display: none;}
+    img#print{ display: block;}
+    img#pc{ display: none;}
+    img#tv{ display: none;}
+}
+
+@media screen and (min-width: 769px) { /* TABLET */
+    body{
+        background: url(../Imagens/back-tablet.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    main{
+        background-color: rgba(255, 255, 255, 0.801);
+        width: 50vw;
+        margin: auto;
+        margin-top: 20px;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    img#phone{ display: none;}
+    img#tablet{ display: block;}
+    img#print{ display: none;}
+    img#pc{ display: none;}
+    img#tv{ display: none;}
+}
+
+@media screen and (min-width: 1025px) { /* DESKTOP */
+    body{
+        background: url(../Imagens/back-pc.jpg) no-repeat;
+        background-size: cover;
+    }
+    img#phone{ display: none;}
+    img#tablet{ display: none;}
+    img#print{ display: none;}
+    img#pc{ display: block;}
+    img#tv{ display: none;}
+}
+
+@media screen and(min-width: 1201px) { /* GRANDES TELAS */
+    body{
+        background: url(../Imagens/back-tv.jpg) no-repeat;
+        background-size: cover;
+    }
+    img#phone{ display: none;}
+    img#tablet{ display: none;}
+    img#print{ display: none;}
+    img#pc{ display: none;}
+    img#tv{ display: block;}
+}
